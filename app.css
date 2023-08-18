@@ -1,3 +1,13 @@
+.serviciosTaller{
+    background-color: #E5E5CB;
+}
+
+.serviciosTaller h2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
 .quienesSomos div{
     background-image: url(./quienssomos.jpg);
     background-position: center;
