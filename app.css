@@ -63,12 +63,14 @@
 
 .primertextoServicio h3 {
     font-size: 2rem;
-    padding-top: 1rem;
+    padding-top: 20%;
 }
 
 .primertextoServicio p {
     padding-top: 3rem;
     font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .primerFoto{
@@ -76,6 +78,70 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 43vh;
+    height: 70vh;
 }
 
+.segundaFoto{
+    background-image: url(./retoquechapa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.tercerFoto{
+    background-image: url(./pinturasimple.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.cuartaFoto {
+    background-image: url(./pinturacompleta.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+    .div7 { grid-area: 4 / 1 / 5 / 2; }
+    .div8 { grid-area: 4 / 2 / 5 / 3; }
+
+ 
+    
+    @media (max-width: 575.98px) {
+        /* CSS rules to apply when screen width is 575.98px or smaller */
+        /* For example, you might adjust font sizes, layout, or hide/show certain elements */
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+            grid-column-gap: 1px;
+            grid-row-gap: 6px;
+            }
+            
+            .div1 { grid-area: 2 / 1 / 3 / 2; }
+            .div2 { grid-area: 1 / 1 / 2 / 2; }
+            .div3 { grid-area: 3 / 1 / 4 / 2; }
+            .div4 { grid-area: 4 / 1 / 5 / 2; }
+            .div5 { grid-area: 6 / 1 / 7 / 2; }
+            .div6 { grid-area: 5 / 1 / 6 / 2; }
+            .div7 { grid-area: 7 / 1 / 8 / 2; }
+            .div8 { grid-area: 8 / 1 / 9 / 2; }
+    }    
