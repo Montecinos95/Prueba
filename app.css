@@ -46,16 +46,16 @@
     padding-bottom: 3rem;
 }
 
-.primerTexto {
+.primertextoServicio{
     text-align: center;
 }
 
-.primerTexto h3 {
+.primertextoServicio h3 {
     font-size: 2rem;
     padding-top: 1rem;
 }
 
-.primerTexto p {
+.primertextoServicio p {
     padding-top: 3rem;
     font-size: 1.2rem;
 }
