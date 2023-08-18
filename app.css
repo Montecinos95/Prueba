@@ -2,6 +2,11 @@
     background-color: #E5E5CB;
 }
 
+.serviciosTaller .row {
+    margin: 0;
+    padding: 0;
+}
+
 .serviciosTaller h2{
     text-align: center;
     padding-top: 2rem;
@@ -40,3 +45,31 @@
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
+
+.primerTexto {
+    text-align: center;
+}
+
+.primerTexto h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.primerTexto p {
+    padding-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.primerFoto{
+    background-image: url(./Reparacion\ Carroceria\ 2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+/* .primerFoto img{
+    width: 580px;
+    height: auto;
+    padding-left: 6rem; 
+} */
