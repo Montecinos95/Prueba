@@ -16,6 +16,7 @@
     padding-top: 2rem;
     padding-bottom: 4rem;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .quienesSomos {
@@ -105,6 +106,10 @@
     height: 70vh;
 }
 
+.serviciosTaller .container-fluid {
+    margin: 0;
+    padding: 0;
+}
 
 .parent {
     display: grid;
@@ -126,13 +131,24 @@
  .seccionContacto{
     background-color: #E5E5CB;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;   
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center;    */
  }
 
  .seccionContacto h2 {
     padding-top: 2rem;
+    text-decoration: underline;
  }
-    
+
+ .iframeCoso{
+    padding-top: 2rem;
+    padding-left: 2rem;
+ } 
+
+.iframeCoso iframe{
+    width: 90%;
+    height: 90%; 
+}
     @media (max-width: 575.98px) {
         /* CSS rules to apply when screen width is 575.98px or smaller */
         /* For example, you might adjust font sizes, layout, or hide/show certain elements */
