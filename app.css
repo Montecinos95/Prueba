@@ -1,5 +1,9 @@
+
+
 .serviciosTaller{
     background-color: #E5E5CB;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .serviciosTaller .row {
@@ -11,7 +15,14 @@
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    font-weight: 600;
 }
+
+.quienesSomos {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .quienesSomos div{
     background-image: url(./quienssomos.jpg);
