@@ -1,0 +1,30 @@
+.quienesSomos div{
+    background-image: url(./quienssomos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: multiply;
+    display: flexbox;
+    width: 100%; 
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.quienesSomos div h3{
+    color: #E5E5CB;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 5rem;
+}
+
+.quienesSomos .primerTexto{
+    color: #E5E5CB;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 4rem 6rem;
+    margin: 0;
+}
