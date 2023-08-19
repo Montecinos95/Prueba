@@ -40,12 +40,19 @@
     text-align: center;
 }
 
-.quienesSomos div h3{
+.quienesSomos .primerH3{
     color: #E5E5CB;
     text-align: center;
     font-size: 3rem;
     margin: 0;
-    padding-top: 5rem;
+    padding-top: 4rem;
+}
+
+.quienesSomos .segundoH3 {
+    color: #E5E5CB;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;  
 }
 
 .quienesSomos .primerTexto{
@@ -58,53 +65,11 @@
     padding-bottom: 3rem;
 }
 
-.primertextoServicio{
-    text-align: center;
-}
-
-.primertextoServicio h3 {
-    font-size: 2rem;
-    padding-top: 20%;
-}
-
-.primertextoServicio p {
-    padding-top: 3rem;
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.primerFoto{
-    background-image: url(./Reparacion\ Carroceria\ 2.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-
-.segundaFoto{
-    background-image: url(./retoquechapa.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-
-.tercerFoto{
-    background-image: url(./pinturasimple.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-
-.cuartaFoto {
-    background-image: url(./pinturacompleta.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
+ .img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
 
 .serviciosTaller .container-fluid {
     margin: 0;
@@ -112,27 +77,99 @@
 }
 
 .parent {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 2 / 1 / 3 / 2; }
-    .div4 { grid-area: 2 / 2 / 3 / 3; }
-    .div5 { grid-area: 3 / 1 / 4 / 2; }
-    .div6 { grid-area: 3 / 2 / 4 / 3; }
-    .div7 { grid-area: 4 / 1 / 5 / 2; }
-    .div8 { grid-area: 4 / 2 / 5 / 3; }
+    .div1 { 
+        height: 60vh;
+        grid-area: 1 / 1 / 2 / 2; }
+
+    .div2 { 
+        height: 60vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        grid-area: 1 / 2 / 2 / 3; }
+    .div2 h3 {
+        padding-top: 25%;
+        font-size: 2rem;
+    }    
+
+    .div2 p {
+        font-size: 1.2rem;
+    }    
+
+    .div3 { 
+        height: 60vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        grid-area: 2 / 1 / 3 / 2; }
+
+        .div3 h3 {
+            padding-top: 25%;
+            font-size: 2rem;
+        }    
+    
+        .div3 p {
+            font-size: 1.2rem;
+        }    
+
+
+    .div4 { 
+        height: 60vh;
+        grid-area: 2 / 2 / 3 / 3; }
+
+
+    .div5 { 
+        height: 60vh;
+        grid-area: 3 / 1 / 4 / 2; }
+
+
+    .div6 {
+        height: 60vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        grid-area: 3 / 2 / 4 / 3; }
+
+        .div6 h3 {
+            padding-top: 25%;
+            font-size: 2rem;
+        }    
+    
+        .div6 p {
+            font-size: 1.2rem;
+        }    
+
+
+    .div7 {
+        height: 60vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        grid-area: 4 / 1 / 5 / 2; }
+
+        .div7 h3 {
+            padding-top: 25%;
+            font-size: 2rem;
+        }    
+    
+        .div7 p {
+            text-align: center;
+            font-size: 1.2rem;
+        }    
+
+
+    .div8 { 
+        height: 60vh;
+        grid-area: 4 / 2 / 5 / 3; }
 
  .seccionContacto{
     background-color: #E5E5CB;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    /* text-align: center;    */
  }
 
  .seccionContacto h2 {
@@ -140,29 +177,51 @@
     text-decoration: underline;
  }
 
- .iframeCoso{
-    padding-top: 2rem;
-    padding-left: 2rem;
+ .seccionContacto .iframeCoso{
+    padding-top: 4rem;
+    padding-left: 4rem;
  } 
 
 .iframeCoso iframe{
     width: 90%;
     height: 90%; 
 }
-    @media (max-width: 575.98px) {
+
+.seccionContacto .comoContacto {
+    padding-left: 10%;
+}
+
+
+  
+
+@media (max-width: 575.98px) {
         /* CSS rules to apply when screen width is 575.98px or smaller */
         /* For example, you might adjust font sizes, layout, or hide/show certain elements */
         .parent {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(8, 1fr);
-            grid-column-gap: 1px;
-            grid-row-gap: 6px;
+            grid-template-rows: repeat(8, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
             }
             
-            .div1 { grid-area: 2 / 1 / 3 / 2; }
-            .div2 { grid-area: 1 / 1 / 2 / 2; }
-            .div3 { grid-area: 3 / 1 / 4 / 2; }
+            .div1 {
+                grid-area: 2 / 1 / 3 / 2; }
+            .div2 { 
+                height: auto;
+                grid-area: 1 / 1 / 2 / 2; }
+            .div2 h3{
+                padding: 0;
+            }    
+            .div3 { 
+                height: auto;
+                grid-area: 3 / 1 / 4 / 2; }
+            .div3 h3 {
+                padding-top: 3rem;
+            }
+            .div3 p {
+                padding-bottom: 3rem;
+            }    
             .div4 { grid-area: 4 / 1 / 5 / 2; }
             .div5 { grid-area: 6 / 1 / 7 / 2; }
             .div6 { grid-area: 5 / 1 / 6 / 2; }
