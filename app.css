@@ -22,7 +22,7 @@
 }
 
 .video-section {
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     overflow: hidden;
     background-color: rgba(0,0,0,.85);
@@ -260,18 +260,7 @@
     object-fit: cover;    
 }
 
-/* .Principal div{
-    background-image: url(./Background1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-color: rgba(0,0,0,.7);
-    background-blend-mode: multiply;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-} */
+
 
 .Principal {
     color: #E5E5CB;
@@ -280,16 +269,23 @@
 
 }  
 
-.Principal div h3{
-    margin: 0;
-    padding-left: 1.2rem;
+
+.Principal .logoUno{
+    padding-top: 5rem;
+    width: 7rem;
 }
-.Principal div h2{
-    padding-left: 1.2rem;
+
+.Principal .testoUno{
+    padding-top: 2rem;
+    font-size: 1.8rem;
 }
-.Principal div img{
-    padding-top: 3rem;
-    width: 5rem;
+
+.Principal .testoDos{
+    font-size: 1.8rem;
+}
+
+.Principal .testoTres{
+    padding-top: 24rem;
 }
 
 @media (max-width: 575.98px) {
