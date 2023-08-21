@@ -41,6 +41,11 @@
     text-decoration: underline;
 }
 
+nav a {
+    text-decoration: none;
+    color: #E5E5CB;
+}
+
 .video-section nav ul li:first-child{
     padding-top: 1rem;
 }
@@ -294,7 +299,7 @@
 }
 
 .Principal .testoUno{
-    padding-top: 27rem;
+    padding-top: 31.5%;
     font-size: 2.3rem;
     justify-content: flex-start;
 }
