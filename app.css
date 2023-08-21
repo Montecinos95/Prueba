@@ -23,11 +23,28 @@
 
 .video-section {
     /* position: relative; */
+    /* display: flex; */
     height: 100vh;
     overflow: hidden;
     background-color: rgba(0,0,0,.85);
     background-blend-mode: multiply;
 }
+
+.video-section nav{
+    display: flex;
+}
+
+.video-section nav ul{
+    list-style: none;
+    padding-left: 85%;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.video-section nav ul li:first-child{
+    padding-top: 1rem;
+}
+
 
 .video-background {
     position: absolute;
@@ -272,21 +289,20 @@
 
 .Principal .logoUno{
     padding-top: 1rem;
-    width: 7rem;
+    width: 5rem;
+    justify-content: flex-start;
 }
 
 .Principal .testoUno{
-    padding-top: 31rem;
+    padding-top: 27rem;
     font-size: 2.3rem;
+    justify-content: flex-start;
 }
 
 .Principal .testoDos{
     font-size: 2.3rem;
 }
 
-.Principal .testoTres{
-    padding-top: 24rem;
-}
 
 @media (max-width: 575.98px) {
         /* CSS rules to apply when screen width is 575.98px or smaller */
