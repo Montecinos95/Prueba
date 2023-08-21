@@ -12,8 +12,9 @@
 }
 
 .serviciosTaller h2{
-    text-align: center;
+    text-align: left;
     padding-top: 2rem;
+    padding-left: 1rem;
     padding-bottom: 4rem;
     font-weight: 600;
     text-decoration: underline;
@@ -203,8 +204,69 @@
     padding-left: 10%;
 }
 
+.herramientasTaller .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.herramientasTaller .parentHerramienta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1Herrami {
+        height: 50vh;
+        grid-area: 1 / 1 / 2 / 2; }
+    .div2Herrami { 
+        height: 50vh;
+        grid-area: 1 / 2 / 2 / 3; }
+    .div3Herrami { 
+        height: 50vh;
+        grid-area: 2 / 1 / 3 / 2; }
+    .div4Herrami { 
+        height: 50vh;
+        grid-area: 2 / 2 / 3 / 3; }
+    .div5Herrami { 
+        height: 50vh;
+        grid-area: 3 / 1 / 4 / 2; }
+    .div6Herrami { 
+        height: 50vh;
+        grid-area: 3 / 2 / 4 / 3; }
 
-  
+.img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.Principal div{
+    background-image: url(./Background1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: multiply;
+    display: flexbox;
+    width: 100%; 
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.Principal {
+    color: #E5E5CB;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}  
+
+.Principal div h3{
+    margin: 0;
+}
 
 @media (max-width: 575.98px) {
         /* CSS rules to apply when screen width is 575.98px or smaller */
