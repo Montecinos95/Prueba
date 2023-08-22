@@ -21,15 +21,26 @@
     <!-- seccion principal -->
     <section class="Principal">
         <div class="container-fluid video-section">
-            <nav>
-                <a href="./index.html"><img class="logoUno animate__animated animate__fadeInLeft" src="./logo2.png" alt=""></a>
-                <ul class="Lista animate__animated animate__fadeInRight">
-                    <li><a href="#Servicios">Servicios</a></li>
-                    <li><a href="#Herramientas">Herramientas</a></li>
-                    <li><a href="#Quien">Nosotros</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    
+                    <img class="logoUno animate__animated animate__fadeInLeft" src="./logo2.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#Servicios">Servicios</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#Herramientas">Herramientas</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#Quien">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Conta">Contacto</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             <video autoplay loop muted playsinline class="video-background">
                 <source src="./IMG_0458.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -97,40 +108,22 @@
 
 
     <!-- seccion de herramientas -->
-    <section class="herramientasTaller" id="Herramientas">
+    <!-- <section class="herramientasTaller" id="Herramientas">
         <div class="container-fluid">
             <p>Contamos con equipos y herramientas de primera tecnología y calidad para brindarle el mejor servicio de reparación a su vehículo.
-                
-               
-                
-                
-                
-                 
-                </p>
-                <div class="parentHerramienta">
-                    <div class="div1Herrami"> 
-                        -	Banco de enderezado
-                    </div>
-                    <div class="div2Herrami">
-                        -	Soldadura mag mig </div>
-                    <div class="div3Herrami"> 
-                        -	Plano aspirante para la imprimación de pintura
-                    </div>
-                    <div class="div4Herrami"> 
-                        -	Laboratorio de colorimetría
-                        <img class="img2" src="./laboratorio.jpg" alt="">
-                    </div>
-                    <div class="div5Herrami"> 
-                        -	Cabina de pintura termo-presurizada
-                        <img class="img2" src="./Cabina.jpeg" alt="">
-                    </div>
-                    <div class="div6Herrami"> 
-                        -	Lampara de secado infrarrojo
-                        <img class="img2" src="./Lampara.jpg" alt="">
-                    </div>
-                    </div>        
+            </p>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -164,7 +157,7 @@
 
 
     <!-- seccion de contacto -->
-    <section class="seccionContacto" id="Contacto">
+    <section class="seccionContacto" id="Conta">
         <div class="container-fluid row">
             <div class="col-sm-6 iframeCoso">
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
@@ -192,7 +185,9 @@
         </div>
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

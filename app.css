@@ -1,6 +1,4 @@
-
-
-.serviciosTaller{
+.serviciosTaller {
     background-color: #E5E5CB;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -11,7 +9,7 @@
     padding: 0;
 }
 
-.serviciosTaller h2{
+.serviciosTaller h2 {
     text-align: left;
     padding-top: 2rem;
     padding-left: 1rem;
@@ -26,29 +24,36 @@
     /* display: flex; */
     height: 100vh;
     overflow: hidden;
-    background-color: rgba(0,0,0,.85);
+    background-color: rgba(0, 0, 0, .85);
     background-blend-mode: multiply;
+    width: 100%;
 }
 
-.video-section nav{
-    display: flex;
+.navbar .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28229, 229, 203, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.video-section nav ul{
+.navbar .navbar-toggler {
+    border: 1px solid #E5E5CB;
+}
+
+
+.video-section nav ul {
     list-style: none;
-    padding-left: 85%;
     font-size: 1.3rem;
     text-decoration: underline;
+    align-self: flex-end;
 }
 
-nav a {
+.video-section nav .MenuLogo {
+    align-self: baseline;
+}
+
+nav .nav-link {
     text-decoration: none;
     color: #E5E5CB;
 }
 
-.video-section nav ul li:first-child{
-    padding-top: 1rem;
-}
 
 
 .video-background {
@@ -67,22 +72,22 @@ nav a {
 }
 
 
-.quienesSomos div{
+.quienesSomos div {
     background-image: url(./quienssomos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
     background-blend-mode: multiply;
     display: flexbox;
-    width: 100%; 
+    width: 100%;
     align-content: center;
     justify-items: center;
     text-align: center;
 }
 
-.quienesSomos .primerH3{
+.quienesSomos .primerH3 {
     color: #E5E5CB;
     text-align: center;
     font-size: 3rem;
@@ -94,10 +99,10 @@ nav a {
     color: #E5E5CB;
     text-align: center;
     font-size: 3rem;
-    margin: 0;  
+    margin: 0;
 }
 
-.quienesSomos .primerTexto{
+.quienesSomos .primerTexto {
     color: #E5E5CB;
     font-size: 1.2rem;
     text-align: center;
@@ -107,11 +112,11 @@ nav a {
     padding-bottom: 3rem;
 }
 
- .img1 {
+.img1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-} 
+}
 
 .serviciosTaller .container-fluid {
     margin: 0;
@@ -125,161 +130,180 @@ nav a {
     grid-template-rows: repeat(4, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
-    
-    .div1 { 
-        height: 60vh;
-        grid-area: 1 / 1 / 2 / 2; }
+}
 
-    .div2 { 
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        grid-area: 1 / 2 / 2 / 3; }
-    .div2 h3 {
-        font-size: 2rem;
-    }    
+.div1 {
+    height: 60vh;
+    grid-area: 1 / 1 / 2 / 2;
+}
 
-    .div2 p {
-        font-size: 1.2rem;
-    }    
+.div2 {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    grid-area: 1 / 2 / 2 / 3;
+}
 
-    .div3 { 
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        grid-area: 2 / 1 / 3 / 2; }
+.div2 h3 {
+    font-size: 2rem;
+}
 
-        .div3 h3 {
-            font-size: 2rem;
-        }    
-    
-        .div3 p {
-            font-size: 1.2rem;
-        }    
+.div2 p {
+    font-size: 1.2rem;
+}
 
+.div3 {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    grid-area: 2 / 1 / 3 / 2;
+}
 
-    .div4 { 
-        height: 60vh;
-        grid-area: 2 / 2 / 3 / 3; }
+.div3 h3 {
+    font-size: 2rem;
+}
 
-
-    .div5 { 
-        height: 60vh;
-        grid-area: 3 / 1 / 4 / 2; }
+.div3 p {
+    font-size: 1.2rem;
+}
 
 
-    .div6 {
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        grid-area: 3 / 2 / 4 / 3; }
-
-        .div6 h3 {
-            font-size: 2rem;
-        }    
-    
-        .div6 p {
-            font-size: 1.2rem;
-        }    
+.div4 {
+    height: 60vh;
+    grid-area: 2 / 2 / 3 / 3;
+}
 
 
-    .div7 {
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        grid-area: 4 / 1 / 5 / 2; }
-
-        .div7 h3 {
-            font-size: 2rem;
-        }    
-    
-        .div7 p {
-            text-align: center;
-            font-size: 1.2rem;
-        }    
+.div5 {
+    height: 60vh;
+    grid-area: 3 / 1 / 4 / 2;
+}
 
 
-    .div8 { 
-        height: 60vh;
-        grid-area: 4 / 2 / 5 / 3; }
+.div6 {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    grid-area: 3 / 2 / 4 / 3;
+}
 
- .seccionContacto{
+.div6 h3 {
+    font-size: 2rem;
+}
+
+.div6 p {
+    font-size: 1.2rem;
+}
+
+
+.div7 {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div7 h3 {
+    font-size: 2rem;
+}
+
+.div7 p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.div8 {
+    height: 60vh;
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.seccionContacto {
     background-color: #E5E5CB;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
- }
+}
 
- .seccionContacto h2 {
+.seccionContacto h2 {
     padding-top: 2rem;
     text-decoration: underline;
- }
+}
 
- .seccionContacto .iframeCoso{
+.seccionContacto .iframeCoso {
     padding-top: 4rem;
     padding-left: 4rem;
- } 
+}
 
-.iframeCoso iframe{
+.iframeCoso iframe {
     width: 90%;
-    height: 90%; 
+    height: 90%;
 }
 
 .seccionContacto .comoContacto {
     padding-left: 10%;
 }
 
-.herramientasTaller .container-fluid{
+.herramientasTaller .container-fluid {
     margin: 0;
     padding: 0;
 }
-.herramientasTaller .parentHerramienta{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1Herrami {
-        height: 50vh;
-        grid-area: 1 / 1 / 2 / 2; }
-    .div2Herrami { 
-        height: 50vh;
-        grid-area: 1 / 2 / 2 / 3; }
-    .div3Herrami { 
-        height: 50vh;
-        grid-area: 2 / 1 / 3 / 2; }
-    .div4Herrami { 
-        height: 50vh;
-        grid-area: 2 / 2 / 3 / 3; }
-    .div5Herrami { 
-        height: 50vh;
-        grid-area: 3 / 1 / 4 / 2; }
-    .div6Herrami { 
-        height: 50vh;
-        grid-area: 3 / 2 / 4 / 3; }
 
-.img2{
+.herramientasTaller {
+    background-color: #E5E5CB;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div1Herrami {
+    height: 50vh;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2Herrami {
+    height: 50vh;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3Herrami {
+    height: 50vh;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4Herrami {
+    height: 50vh;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div5Herrami {
+    height: 50vh;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div6Herrami {
+    height: 50vh;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.img2 {
     width: 100%;
     height: 100%;
-    object-fit: cover;    
+    object-fit: cover;
 }
 
 
@@ -289,62 +313,98 @@ nav a {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
 
-}  
+}
 
 
-.Principal .logoUno{
-    padding-top: 1rem;
+.Principal .logoUno {
+    padding-top: 0.5rem;
     width: 5rem;
-    justify-content: flex-start;
 }
 
-.Principal .testoUno{
-    padding-top: 31.5%;
+.Principal .testoUno {
+    padding-top: 29%;
     font-size: 2.3rem;
-    justify-content: flex-start;
 }
 
-.Principal .testoDos{
+.Principal .testoDos {
     font-size: 2.3rem;
 }
 
 
-@media (max-width: 575.98px) {
-        /* CSS rules to apply when screen width is 575.98px or smaller */
-        /* For example, you might adjust font sizes, layout, or hide/show certain elements */
-        .parent {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(8, auto);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            }
-            
-            .div1 {
-                grid-area: 2 / 1 / 3 / 2; }
-            .div2 { 
-                height: auto;
-                grid-area: 1 / 1 / 2 / 2; }
-            .div2 h3{
-                padding: 0;
-            }    
-            .div3 { 
-                height: auto;
-                grid-area: 3 / 1 / 4 / 2; }
-            .div3 h3 {
-                padding-top: 3rem;
-            }
-            .div3 p {
-                padding-bottom: 3rem;
-            }    
-            .div4 { grid-area: 4 / 1 / 5 / 2; }
-            .div5 { grid-area: 6 / 1 / 7 / 2; }
-            .div6 { grid-area: 5 / 1 / 6 / 2; }
-            .div7 { grid-area: 7 / 1 / 8 / 2; }
-            .div8 { grid-area: 8 / 1 / 9 / 2; }
+@media (max-width: 576px) {
 
-            .iframeCoso iframe{
-                width: 90%;
-                height: 380px; 
-            }
-    }    
+    /* CSS rules to apply when screen width is 575.98px or smaller */
+    /* For example, you might adjust font sizes, layout, or hide/show certain elements */
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .div1 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div2 {
+        height: auto;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 h3 {
+        padding: 0;
+    }
+
+    .div3 {
+        height: auto;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div3 h3 {
+        padding-top: 3rem;
+    }
+
+    .div3 p {
+        padding-bottom: 3rem;
+    }
+
+    .div4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div5 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .div6 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .div7 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+
+    .div8 {
+        grid-area: 8 / 1 / 9 / 2;
+    }
+
+    .iframeCoso iframe {
+        width: 90%;
+        height: 380px;
+    }
+
+    .Principal .logoUno {
+        padding-top: 0.5rem;
+        width: 4rem;
+    }
+    
+    .Principal .testoUno {
+        padding-top: 85%;
+        font-size: 2rem;
+    }
+    
+    .Principal .testoDos {
+        font-size: 2rem;
+    }
+}
